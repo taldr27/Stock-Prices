@@ -1,0 +1,7 @@
+.country-container {
+  display: grid;
+}
+
+.flagImg {
+  max-width: 100vw;
+}
