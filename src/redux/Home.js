@@ -42,7 +42,7 @@ export const getCountries = (payload) => (
   }
 );
 
-const countryReducer = (state = [], action) => {
+const countryReducer = (state = dataCountries, action) => {
   switch (action.type) {
     case 'GET_COUNTRY':
       return action.payload;

@@ -8,7 +8,7 @@ const Details = () => {
   return (
     <>
       <nav className="navBar">
-        <NavLink to="/companies"><IoIosArrowBack /></NavLink>
+        <NavLink to="/companies/US"><IoIosArrowBack /></NavLink>
         <div className="settings">
           <FaMicrophone />
           <IoMdSettings />

@@ -13,7 +13,6 @@ const Home = () => {
   useEffect(() => {
     dispatch(getCountries(dataCountries));
   }, [dispatch]);
-  console.log(countries);
   return (
     <>
       <nav className="navBar">
@@ -25,15 +24,13 @@ const Home = () => {
           <IoMdSettings />
         </div>
       </nav>
-      <NavLink to="/companies">To companies</NavLink>
-      <h1>Hi from Home!</h1>
-      <div>
+      <div className="country-container">
         {countries.map((country) => (
           <div key={country.symbol}>
-            <h1>
+            {/* <h2>
               {country.countryName}
-            </h1>
-            <img className="flagImg" src={country.countryImg} alt="countryImage" />
+            </h2> */}
+            <NavLink to={`/companies/${country.symbol}`}><img className="flagImg" src={country.countryImg} alt="countryImage" /></NavLink>
           </div>
         ))}
       </div>
