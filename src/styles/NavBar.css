@@ -1,0 +1,17 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.navBar > * {
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.settings {
+  display: flex;
+  gap: 1em;
+  
+}
