@@ -9,9 +9,6 @@ const Country = () => {
   useEffect(() => {
     dispatch(getCountries(dataCountries));
   }, [dispatch]);
-  const onClickChange = (e) => {
-    console.log(e.currentTarget.id);
-  };
   return (
     <>
       {countries.map((country) => (
@@ -19,7 +16,7 @@ const Country = () => {
           <NavLink
             to={`/companies/${country.symbol}`}
           >
-            <button id={country.symbol} type="button" onClick={onClickChange}>
+            <button id={country.symbol} type="button">
               <img
                 className="flagImg"
                 src={country.countryImg}

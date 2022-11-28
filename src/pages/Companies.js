@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoMdSettings, IoIosArrowBack } from 'react-icons/io';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { fetchCompanies } from '../redux/Companies';
 
 const Companies = () => {
-  console.log('Companies Page');
+  const companies = useSelector((state) => state.companies);
+  const urlElement = window.location.href.split('/')[4];
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCompanies(urlElement));
+  }, [urlElement, dispatch]);
   return (
     <>
       <nav className="navBar">
@@ -14,8 +21,13 @@ const Companies = () => {
           <IoMdSettings />
         </div>
       </nav>
-      <h1>Hi from Companies!</h1>
-      <NavLink to="/companies/US/company-details">To Details</NavLink>
+      {companies.map((company) => (
+        <div key={company.symbol}>
+          <h2>{company.companyName}</h2>
+          <h2>{company.marketCap}</h2>
+          <NavLink to="/companies/US/company-details">To Details</NavLink>
+        </div>
+      ))}
     </>
   );
 };
