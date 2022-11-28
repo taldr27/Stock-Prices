@@ -15,6 +15,7 @@ const Companies = () => {
         </div>
       </nav>
       <h1>Hi from Companies!</h1>
+      <NavLink to="/company-details">To Details</NavLink>
     </>
   );
 };
