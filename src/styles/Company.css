@@ -1,0 +1,35 @@
+.company-field {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 2em;
+}
+
+.companies-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.div-company {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+  border: none;
+  text-align: initial;
+  color: black;
+}
+
+.name-market {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 2em;
+}
