@@ -8,12 +8,10 @@ import '../styles/Company.css';
 
 const Companies = () => {
   const companies = useSelector((state) => state.companies);
-  const details = useSelector((state) => state.details);
   const urlElement = window.location.href.split('/')[4];
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCompanies(urlElement));
-    console.log(dispatch(fetchCompanies(urlElement)));
   }, [urlElement, dispatch]);
   return (
     <>
@@ -26,22 +24,20 @@ const Companies = () => {
         </div>
       </nav>
       <div className="companies-container">
-        {details.map((detail) => (companies.map((company) => (
+        {companies.map((company) => (
           <div key={company.symbol} className="company-field">
             <NavLink to={`/companies/${urlElement}/${(company.symbol).replace(/\s/g, '')}/company-details`}>
               <div className="div-company">
                 <div>
-                  <img alt="company-img" src={detail.image} />
                   <div className="name-market">
                     <em>{company.companyName}</em>
                     <em>{`Market Cap: $${(company.marketCap)}`}</em>
                   </div>
                 </div>
-                <p>{`Price: ${detail.price}`}</p>
               </div>
             </NavLink>
           </div>
-        ))))}
+        ))}
       </div>
     </>
   );

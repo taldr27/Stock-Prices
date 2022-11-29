@@ -14,6 +14,7 @@ const Details = () => {
   useEffect(() => {
     dispatch(fetchDetails(urlElement));
   }, [urlElement, dispatch]);
+
   return (
     <>
       <nav className="navBar">

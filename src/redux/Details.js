@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const GET_DETAILS = 'redux/Companies/GET_DETAILS';
 const url = 'https://financialmodelingprep.com/api/v3/profile/';
-const apiId = '?apikey=7351f286c5c54d7b53b445bf56c21444';
+const apiId = '?apikey=f43afaad3ccfc69fd78ae0797841d873';
 
 export const fetchDetails = createAsyncThunk(
   GET_DETAILS, (company) => axios.get(`${url}${company}${apiId}`)

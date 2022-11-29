@@ -6,6 +6,14 @@
   gap: 1em;
 }
 
+.message-error {
+  display: none;
+}
+
+.price-container img {
+  max-width: 5em;
+}
+
 .price-box {
   text-align: initial;
 }

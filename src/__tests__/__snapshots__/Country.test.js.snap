@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Country component Should match the snapshot Country 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="top"
+      >
+        <div
+          style="min-width: 100%;"
+        >
+          <img
+            alt="Example"
+            class="example-img"
+            src="wrld.png"
+          />
+          <p
+            style="font-size: 1.5rem;"
+          >
+            World Companies
+          </p>
+        </div>
+      </div>
+      <div
+        class="country-container"
+      >
+        <div>
+          <a
+            class=""
+            href="/companies/US"
+          >
+            <div
+              class="img-container"
+              id="US"
+            >
+              <img
+                alt="United States"
+                class="flagImg"
+                src="us.png"
+              />
+              <p>
+                United States
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a
+            class=""
+            href="/companies/BR"
+          >
+            <div
+              class="img-container"
+              id="BR"
+            >
+              <img
+                alt="Brasil"
+                class="flagImg"
+                src="br.png"
+              />
+              <p>
+                Brasil
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a
+            class=""
+            href="/companies/MX"
+          >
+            <div
+              class="img-container"
+              id="MX"
+            >
+              <img
+                alt="Mexico"
+                class="flagImg"
+                src="mx.png"
+              />
+              <p>
+                Mexico
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a
+            class=""
+            href="/companies/GB"
+          >
+            <div
+              class="img-container"
+              id="GB"
+            >
+              <img
+                alt="United Kingdom"
+                class="flagImg"
+                src="gb.png"
+              />
+              <p>
+                United Kingdom
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="top"
+    >
+      <div
+        style="min-width: 100%;"
+      >
+        <img
+          alt="Example"
+          class="example-img"
+          src="wrld.png"
+        />
+        <p
+          style="font-size: 1.5rem;"
+        >
+          World Companies
+        </p>
+      </div>
+    </div>
+    <div
+      class="country-container"
+    >
+      <div>
+        <a
+          class=""
+          href="/companies/US"
+        >
+          <div
+            class="img-container"
+            id="US"
+          >
+            <img
+              alt="United States"
+              class="flagImg"
+              src="us.png"
+            />
+            <p>
+              United States
+            </p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          class=""
+          href="/companies/BR"
+        >
+          <div
+            class="img-container"
+            id="BR"
+          >
+            <img
+              alt="Brasil"
+              class="flagImg"
+              src="br.png"
+            />
+            <p>
+              Brasil
+            </p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          class=""
+          href="/companies/MX"
+        >
+          <div
+            class="img-container"
+            id="MX"
+          >
+            <img
+              alt="Mexico"
+              class="flagImg"
+              src="mx.png"
+            />
+            <p>
+              Mexico
+            </p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          class=""
+          href="/companies/GB"
+        >
+          <div
+            class="img-container"
+            id="GB"
+          >
+            <img
+              alt="United Kingdom"
+              class="flagImg"
+              src="gb.png"
+            />
+            <p>
+              United Kingdom
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
