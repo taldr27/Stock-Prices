@@ -12,10 +12,9 @@ const Companies = () => {
   const urlElement = window.location.href.split('/')[4];
   const dispatch = useDispatch();
   useEffect(() => {
-    if (companies.length === 0) {
-      dispatch(fetchCompanies(urlElement));
-    }
-  }, [urlElement, dispatch, companies.length]);
+    dispatch(fetchCompanies(urlElement));
+    console.log(dispatch(fetchCompanies(urlElement)));
+  }, [urlElement, dispatch]);
   return (
     <>
       <nav className="navBar">
