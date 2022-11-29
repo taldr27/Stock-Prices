@@ -46,7 +46,7 @@ describe('Testing Home page', () => {
 });
 
 describe('Testing Companies page', () => {
-  it('Should match the companies', () => {
+  it('Should match the companies snap', () => {
     const companies = render(
       <StrictMode>
         <Router>

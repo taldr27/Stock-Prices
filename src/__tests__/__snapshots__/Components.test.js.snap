@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Companies page Should match the companies 1`] = `
+exports[`Testing Companies page Should match the companies snap 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
