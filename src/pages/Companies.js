@@ -25,7 +25,7 @@ const Companies = () => {
         <div key={company.symbol}>
           <h2>{company.companyName}</h2>
           <h2>{company.marketCap}</h2>
-          <NavLink to="/companies/US/company-details">To Details</NavLink>
+          <NavLink to={`/companies/${urlElement}/${(company.symbol).replace(/\s/g, '')}/company-details`}>To Details</NavLink>
         </div>
       ))}
     </>

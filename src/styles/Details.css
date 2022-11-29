@@ -1,0 +1,11 @@
+.price-container {
+  margin-inline: 5em;
+  margin-block: 3em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.price-box {
+  text-align: initial;
+}
