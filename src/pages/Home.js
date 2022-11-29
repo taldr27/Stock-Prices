@@ -9,14 +9,14 @@ const Home = () => (
   <>
     <nav className="navBar">
       <div>
-        <h3>Countries</h3>
+        <p>Countries</p>
       </div>
       <div className="settings">
         <FaMicrophone />
         <IoMdSettings />
       </div>
     </nav>
-    <div className="country-container">
+    <div>
       <Country />
     </div>
   </>

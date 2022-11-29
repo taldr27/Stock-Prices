@@ -12,12 +12,15 @@ const Companies = () => {
   const urlElement = window.location.href.split('/')[4];
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchCompanies(urlElement));
-  }, [urlElement, dispatch]);
+    if (companies.length === 0) {
+      dispatch(fetchCompanies(urlElement));
+    }
+  }, [urlElement, dispatch, companies.length]);
   return (
     <>
       <nav className="navBar">
         <NavLink to="/"><IoIosArrowBack /></NavLink>
+        <p>Companies</p>
         <div className="settings">
           <FaMicrophone />
           <IoMdSettings />

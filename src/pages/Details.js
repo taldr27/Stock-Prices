@@ -12,8 +12,10 @@ const Details = () => {
   const country = window.location.href.split('/')[4];
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchDetails(urlElement));
-  }, [urlElement, dispatch]);
+    if (details.length === 0) {
+      dispatch(fetchDetails(urlElement));
+    }
+  }, [urlElement, dispatch, details.length]);
   return (
     <>
       <nav className="navBar">

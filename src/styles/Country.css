@@ -1,0 +1,36 @@
+.top {
+  display: flex;
+  align-items: center;
+  padding: 0.1em;
+  background-color: hsl(219, 72%, 62%);
+  color: white;
+}
+
+.country-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  margin-inline: 0;
+}
+
+.example-img {
+  width: 50%;
+}
+
+.country-container > * {
+  background-color: hsl(219, 72%, 62%);
+  border: 1px solid rgba(0, 0, 0, 0.172);
+  font-size: 1.5rem;
+}
+
+.country-container > *:hover {
+  background-color: hsl(219, 44%, 45%);
+}
+
+.img-container {
+  color: white;
+}
+
+.flagImg {
+  width: 100%;
+}
