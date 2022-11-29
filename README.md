@@ -46,7 +46,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/)
+- [Live Demo Link](https://fascinating-praline-d37c68.netlify.app)
 
 <!-- GETTING STARTED -->
 
