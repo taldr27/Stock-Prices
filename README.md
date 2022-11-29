@@ -20,6 +20,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+- [🙏 Acknowledgements](#acknowledgements)
 - [👥 Authors](#authors)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -47,6 +48,7 @@
 
 
 - [Live Demo Link](https://fascinating-praline-d37c68.netlify.app)
+- [Video](https://www.loom.com/share/ae5613964c344d92bc69158e4d72dbd0)
 
 <!-- GETTING STARTED -->
 
@@ -62,24 +64,45 @@ To get a local copy up and running, follow these steps.
 - Clone this [repository](git@github.com:taldr27/Stock-Prices.git) to your desired folder.
 - Access `cd stock-prices`
 
-
 >### Install
 
 - Write `npm install`
 
 >### Usage
 
-- Execute `npm run`
+- Execute `npm start`
 
 >### Run tests
 
 - Execute `npm test`
 
+## 🤝 Contributing <a name="contributing">
+👤 ***Diego Garcia*
+
+- GitHub: [taldr27](https://github.com/taldr27)
+- Twitter: [@DiegoGarcia](https://twitter.com/taldr_27)
+- LinkedIn: [Diego Garcia](https://www.linkedin.com/in/diegogarcial/)
+
+
+👤 ***Jose Zepeda*
+
+- GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
+- Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
+- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)</a>
+
+</a>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+I would like to thank to the designer of the original idea.
+- [Original Author Behance Link](https://www.behance.net/sakwadesignstudio)
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 ***Diego Garcia*
 
