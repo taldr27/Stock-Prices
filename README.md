@@ -48,7 +48,7 @@
 
 
 - [Live Demo Link](https://fascinating-praline-d37c68.netlify.app)
-- [Video](https://www.loom.com/share/ae5613964c344d92bc69158e4d72dbd0)
+- [Video](https://www.loom.com/share/5aa307ef0498453c84d14786b39577f8)
 
 <!-- GETTING STARTED -->
 
@@ -82,15 +82,6 @@ To get a local copy up and running, follow these steps.
 - GitHub: [taldr27](https://github.com/taldr27)
 - Twitter: [@DiegoGarcia](https://twitter.com/taldr_27)
 - LinkedIn: [Diego Garcia](https://www.linkedin.com/in/diegogarcial/)
-
-
-👤 ***Jose Zepeda*
-
-- GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
-- Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
-- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)</a>
-
-</a>
 
 <!-- ACKNOWLEDGEMENTS -->
 
