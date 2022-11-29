@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
+  border: 1px solid rgba(0, 0, 0, 0.172);
+  background-color: hsl(219, 45%, 48%);
+  padding: 0.5em;
+  color: white;
+  width: 100vw;
 }
 
-.navBar > * {
-  padding: 0.5em;
-  font-size: 1.5em;
+svg {
+  color: white;
 }
 
 .settings {
