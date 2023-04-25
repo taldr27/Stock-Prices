@@ -6,7 +6,9 @@ const Home = () => (
   <>
     <div>
       <Navbar title="Countries" />
-      <Country />
+      <div className="bg-[#D4D1FF] h-4/5">
+        <Country />
+      </div>
     </div>
   </>
 );

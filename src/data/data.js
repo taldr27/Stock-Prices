@@ -4,7 +4,8 @@ import br from '../images/br.png';
 import mx from '../images/mx.png';
 import de from '../images/de.png';
 import gb from '../images/gb.png';
+import ru from '../images/ru.png';
 
 export {
-  us, ca, br, mx, de, gb,
+  us, ca, br, mx, de, gb, ru,
 };

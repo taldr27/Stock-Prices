@@ -7,30 +7,29 @@ const Country = () => {
   const countries = useSelector((state) => state.countries);
   return (
     <>
-      <div className="top">
-        <div style={{ minWidth: '100%' }}>
+      <div className="">
+        <div className="flex flex-col items-center w-full">
           <img
             src={world}
             alt="Example"
-            className="example-img"
+            className="w-full sm:max-w-2xl"
           />
-          <p style={{ fontSize: '1.5rem' }}>World Companies</p>
-
+          <p className="text-black text-xl sm:text-3xl">World Companies</p>
         </div>
       </div>
-      <div className="country-container">
+      <div className="grid grid-cols-2 w-full justify-center items-center justify-items-center p-4">
         {countries.map((country) => (
-          <div key={country.symbol}>
+          <div key={country.symbol} className=" text-black">
             <NavLink
               to={`/companies/${country.symbol}`}
             >
-              <div id={country.symbol} className="img-container">
+              <div id={country.symbol} className="">
                 <img
-                  className="flagImg"
+                  className=""
                   src={country.countryImg}
                   alt={country.countryName}
                 />
-                <p>{country.countryName}</p>
+                <p className="text-center text-xl sm:text-2xl">{country.countryName}</p>
               </div>
             </NavLink>
           </div>

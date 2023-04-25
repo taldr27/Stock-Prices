@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaMicrophone } from 'react-icons/fa';
-import { IoMdSettings, IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowBack } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 import { fetchDetails } from '../redux/Details';
+import Navbar from '../components/Navbar';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
@@ -13,30 +13,28 @@ const Details = () => {
   useEffect(() => {
     dispatch(fetchDetails(urlElement));
   }, [urlElement, dispatch]);
-
+  const backElement = <NavLink to={`/companies/${country}`}><IoIosArrowBack /></NavLink>;
   return (
     <>
-      <nav className="navBar">
-        <NavLink to={`/companies/${country}`}><IoIosArrowBack /></NavLink>
-        <div className="settings">
-          <FaMicrophone />
-          <IoMdSettings />
-        </div>
-      </nav>
+      <Navbar title="Details" back={backElement} />
       {details.map((detail) => (
-        <div key={detail.symbol}>
-          <div className="price-container">
-            <img alt="company-img" src={detail.image} />
-            <div className="price-box">
-              <h2>{`${detail.companyName}`}</h2>
-              <h4>{`Price: $${detail.price}`}</h4>
-            </div>
+        <div key={detail.symbol} className="flex flex-col items-center h-4/5">
+          <div className="">
+            <img alt="" src={detail.image} />
           </div>
-          <div>
-            <h3>{`Currency: ${detail.currency}`}</h3>
-            <h3>{`Industry: ${detail.industry}`}</h3>
-            <h3>{`Sector: ${detail.sector}`}</h3>
-            <h3>{`CEO: ${detail.ceo}`}</h3>
+          <div className="flex flex-col items-center justify-center">
+            <span className="font-bold">Company name: </span>
+            <span>{`${detail.companyName}`}</span>
+            <span className="font-bold">Price: </span>
+            <span className="">{`$${detail.price}`}</span>
+            <span className="font-bold">Currency: </span>
+            <span className="">{`${detail.currency}`}</span>
+            <span className="font-bold">Industry: </span>
+            <span className="">{`${detail.industry}`}</span>
+            <span className="font-bold">Sector: </span>
+            <span className="">{`${detail.sector}`}</span>
+            <span className="font-bold">CEO: </span>
+            <span className="">{`${detail.ceo}`}</span>
           </div>
         </div>
       ))}

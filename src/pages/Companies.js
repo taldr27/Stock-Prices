@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchCompanies } from '../redux/Companies';
 import Navbar from '../components/Navbar';
+import city from '../images/city.jpg';
 
 const Companies = () => {
   const companies = useSelector((state) => state.companies);
@@ -12,28 +13,62 @@ const Companies = () => {
   useEffect(() => {
     dispatch(fetchCompanies(urlElement));
   }, [urlElement, dispatch]);
+  const backElement = <NavLink to="/" className="text-2xl"><IoIosArrowBack /></NavLink>;
   return (
-    <>
-      <nav className="">
-        <Navbar title="Companies" back={<IoIosArrowBack />} />
-      </nav>
-      <div className="companies-container">
+    <div>
+      <Navbar title="Companies" back={backElement} />
+      <div className="relative">
+        <div className="flex flex-col items-center w-full">
+          <img
+            src={city}
+            alt="Example"
+            className="w-full sm:max-w-2xl"
+          />
+          <div className="bg-[#00000047] absolute w-full" />
+          <p className="text-white text-2xl absolute left-4 bottom-4 font-bold">World Companies</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-2">
         {companies.map((company) => (
-          <div key={company.symbol} className="company-field">
+          <div key={company.symbol} className="border-[0.5px] border-gray-400">
             <NavLink to={`/companies/${urlElement}/${(company.symbol).replace(/\s/g, '')}/company-details`}>
-              <div className="div-company">
-                <div>
-                  <div className="name-market">
-                    <em>{company.companyName}</em>
-                    <em>{`Market Cap: $${(company.marketCap)}`}</em>
-                  </div>
+              <div className="p-3 relative">
+                <div className="">
+                  <span className="font-bold">Company Symbol: </span>
+                  <span>
+                    {company.symbol}
+                  </span>
+                </div>
+                <div className="">
+                  <span className="font-bold">Exchange: </span>
+                  <span>
+                    {company.exchange}
+                  </span>
+                </div>
+                <div className="">
+                  <span className="font-bold">Market Cap: </span>
+                  <span>
+                    {`${Intl.NumberFormat('en-US', {
+                      style: 'currency',
+                      currency: 'USD',
+                    }).format(company.marketCap).slice(0, -7)}`}
+                  </span>
+                </div>
+                <div className="">
+                  <span className="font-bold">Price: </span>
+                  <span>
+                    {`${Intl.NumberFormat('en-US', {
+                      style: 'currency',
+                      currency: 'USD',
+                    }).format(company.price)}`}
+                  </span>
                 </div>
               </div>
             </NavLink>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

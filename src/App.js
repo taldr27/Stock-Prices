@@ -9,7 +9,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-[#D4D1FF] h-4/5">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/companies/:country" element={<Companies />} />

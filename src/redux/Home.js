@@ -1,5 +1,5 @@
 import {
-  us, br, mx, gb,
+  us, br, mx, gb, ru, ca,
 } from '../data/data';
 
 export const dataCountries = [
@@ -22,6 +22,16 @@ export const dataCountries = [
     symbol: 'GB',
     countryName: 'United Kingdom',
     countryImg: gb,
+  },
+  {
+    symbol: 'RU',
+    countryName: 'Russia',
+    countryImg: ru,
+  },
+  {
+    symbol: 'CA',
+    countryName: 'Canada',
+    countryImg: ca,
   },
 ];
 
