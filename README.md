@@ -47,8 +47,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://fascinating-praline-d37c68.netlify.app)
-- [Video](https://www.loom.com/share/5aa307ef0498453c84d14786b39577f8)
+- [Live Demo Link](https://stock-prices-mh772w4ci-taldr27.vercel.app/))
 
 <!-- GETTING STARTED -->
 
