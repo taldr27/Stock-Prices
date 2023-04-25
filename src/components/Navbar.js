@@ -1,15 +1,18 @@
 import React from 'react';
 import { FaMicrophone } from 'react-icons/fa';
-import { IoMdSettings } from 'react-icons/io';
+import { IoIosArrowBack, IoMdSettings } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ back, title }) => {
   console.log('navbar');
   return (
-    <nav className="navBar">
-      <div>
-        <p>Countries</p>
+    <nav className="flex justify-between p-4 bg-black text-white text-xl">
+      <div className="flex items-center gap-4">
+        {back ? <NavLink to="/" className="text-2xl"><IoIosArrowBack /></NavLink> : ''}
+        <p>{title}</p>
       </div>
-      <div className="settings">
+      <div className="flex items-center gap-5">
         <FaMicrophone />
         <IoMdSettings />
       </div>

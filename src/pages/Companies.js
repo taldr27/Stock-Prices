@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { FaMicrophone } from 'react-icons/fa';
-import { IoMdSettings, IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchCompanies } from '../redux/Companies';
+import Navbar from '../components/Navbar';
 
 const Companies = () => {
   const companies = useSelector((state) => state.companies);
@@ -14,13 +14,8 @@ const Companies = () => {
   }, [urlElement, dispatch]);
   return (
     <>
-      <nav className="navBar">
-        <NavLink to="/"><IoIosArrowBack /></NavLink>
-        <p>Companies</p>
-        <div className="settings">
-          <FaMicrophone />
-          <IoMdSettings />
-        </div>
+      <nav className="">
+        <Navbar title="Companies" back={<IoIosArrowBack />} />
       </nav>
       <div className="companies-container">
         {companies.map((company) => (
