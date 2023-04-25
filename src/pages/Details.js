@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { IoIosArrowBack } from 'react-icons/io';
@@ -7,7 +8,6 @@ import Navbar from '../components/Navbar';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
-  console.log(details);
   const urlElement = window.location.href.split('/')[5];
   const country = window.location.href.split('/')[4];
   const dispatch = useDispatch();
@@ -23,7 +23,15 @@ const Details = () => {
   useEffect(() => {
     dispatch(fetchDetails(urlElement));
   }, [urlElement, dispatch]);
-  const backElement = <NavLink to={`/companies/${country}`}><IoIosArrowBack /></NavLink>;
+  const handleBack = () => {
+    window.location.reload();
+  };
+  const backElement = (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+    <div onClick={handleBack}>
+      <NavLink to={`/companies/${country}`}><IoIosArrowBack /></NavLink>
+    </div>
+  );
   return (
     <>
       <Navbar title="Details" back={backElement} />
