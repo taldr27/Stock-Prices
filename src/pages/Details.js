@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
+  console.log(details);
   const urlElement = window.location.href.split('/')[5];
   const country = window.location.href.split('/')[4];
   const dispatch = useDispatch();
@@ -17,8 +18,8 @@ const Details = () => {
   return (
     <>
       <Navbar title="Details" back={backElement} />
-      {details.map((detail) => (
-        <div key={detail.symbol} className="flex flex-col items-center h-4/5">
+      {details.length !== 0 ? details.map((detail) => (
+        <div key={detail.symbol} className="flex flex-col items-center justify-center h-[93%]">
           <div className="">
             <img alt="" src={detail.image} />
           </div>
@@ -37,7 +38,16 @@ const Details = () => {
             <span className="">{`${detail.ceo}`}</span>
           </div>
         </div>
-      ))}
+      ))
+        : (
+          <div className="flex flex-col items-center justify-center h-[93%]">
+            <p className="font-bold text-3xl text-center">The free API quota for today was exceeded or a paid company was selected.</p>
+            <p className="">
+              More info
+              <a href="https://site.financialmodelingprep.com/developer/docs/pricing" className="text-blue-600 font-bold" target="_blank" rel="noreferrer"> here.</a>
+            </p>
+          </div>
+        )}
     </>
   );
 };
