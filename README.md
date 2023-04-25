@@ -28,7 +28,7 @@
 
 # 📖 Stock Prices Project <a name="about-project"></a>
 
-> You can access to some countries and check some of their companies stock prices.
+> This project contains a mobile application where you can see the stock prices of some of the largest companies in the world, developed with React and Redux and making a call from a payed API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
