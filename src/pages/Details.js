@@ -4,7 +4,6 @@ import { FaMicrophone } from 'react-icons/fa';
 import { IoMdSettings, IoIosArrowBack } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 import { fetchDetails } from '../redux/Details';
-import '../styles/Details.css';
 
 const Details = () => {
   const details = useSelector((state) => state.details);

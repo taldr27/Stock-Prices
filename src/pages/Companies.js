@@ -4,7 +4,6 @@ import { IoMdSettings, IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchCompanies } from '../redux/Companies';
-import '../styles/Company.css';
 
 const Companies = () => {
   const companies = useSelector((state) => state.companies);
