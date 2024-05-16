@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://stock-prices-mh772w4ci-taldr27.vercel.app/)
+- [Live Demo Link](https://stock-prices-mh772w4ci-taldr27.vercel.app/) (Mobile only)
 
 <!-- GETTING STARTED -->
 
